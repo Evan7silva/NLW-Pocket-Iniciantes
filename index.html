@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prompts</title>
+    <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="app">
+      <aside class="sidebar"></aside>
+      <main class="main">
+        <header class="main-header">
+          <button id="btn-copy" class="btn-outline btn">
+            <img src="./assets/copy.svg" alt="Copiar" class="icon" />
+            <span>Copiar</span>
+          </button>
+
+          <button id="btn-save" class="btn-primary btn w-150">Salvar</button>
+        </header>
+        <div
+          id="title-wrapper"
+          data-placeholder="Título do prompt"
+          class="editable-wrapper"
+        >
+          <h1 id="prompt-title" class="prompt-title" contenteditable="true">
+            ⚡ Planejamento de tarefas semanais
+          </h1>
+        </div>
+        <div
+          id="content-wrapper"
+          data-placeholder="Conteúdo do prompt ..."
+          class="editable-wrapper"
+        >
+          <div
+            id="prompt-content"
+            class="prompt-content"
+            contenteditable="true"
+          >
+            "Me ajude a organizar minha semana de forma equilibrada. Distribua
+            minhas tarefas profissionais e pessoais em blocos de tempo
+            realistas. \LSugira horários para foco profundo e momentos para
+            pausas estratégicas. \LInclua dicas de priorização. No final,
+            entregue o plano em formato de checklist diário para fácil
+            acompanhamento."
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
