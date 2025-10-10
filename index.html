@@ -13,7 +13,36 @@
   </head>
   <body>
     <div class="app">
-      <aside class="sidebar"></aside>
+      <button id="btn-open" class="icon-button open-toggle">
+        <img src="./assets/open.svg" alt="Abrir Menu" class="icon" />
+      </button>
+      <aside class="sidebar">
+        <header class="sidebar-header">
+          <img src="./assets/logo.svg" alt="Logo" class="logo" />
+          <button id="btn-collapse" class="icon-button">
+            <img src="./assets/collapse.svg" alt="Fechar menu" class="icon" />
+          </button>
+        </header>
+        <div class="sidebar-content">
+          <div class="search-container">
+            <img
+              src="./assets/search.svg"
+              alt="Buscar"
+              class="icon search-icon"
+            />
+            <input
+              id="search-input"
+              class="search-input"
+              type="text"
+              placeholder="Buscar por título"
+            />
+            <button id="btn-new" class="btn-primary btn btn-full">
+              Novo prompt
+            </button>
+          </div>
+          <ul id="prompt-list" class="prompt-list"></ul>
+        </div>
+      </aside>
       <main class="main">
         <header class="main-header">
           <button id="btn-copy" class="btn-outline btn">
@@ -28,9 +57,11 @@
           data-placeholder="Título do prompt"
           class="editable-wrapper"
         >
-          <h1 id="prompt-title" class="prompt-title" contenteditable="true">
-            ⚡ Planejamento de tarefas semanais
-          </h1>
+          <h1
+            id="prompt-title"
+            class="prompt-title"
+            contenteditable="true"
+          ></h1>
         </div>
         <div
           id="content-wrapper"
@@ -41,16 +72,10 @@
             id="prompt-content"
             class="prompt-content"
             contenteditable="true"
-          >
-            "Me ajude a organizar minha semana de forma equilibrada. Distribua
-            minhas tarefas profissionais e pessoais em blocos de tempo
-            realistas. \LSugira horários para foco profundo e momentos para
-            pausas estratégicas. \LInclua dicas de priorização. No final,
-            entregue o plano em formato de checklist diário para fácil
-            acompanhamento."
-          </div>
+          ></div>
         </div>
       </main>
     </div>
+    <script src="./script.js"></script>
   </body>
 </html>
